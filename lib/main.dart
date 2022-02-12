@@ -225,7 +225,7 @@ class _HomePageState extends State<HomePage> {
                  print('Backspace');
 
                  setState(() {
-                   // '12345'
+
                    var length = _pass.length;
                    _pass = _pass.substring(0, length - 1);
                  });
@@ -295,7 +295,6 @@ class _HomePageState extends State<HomePage> {
               alignment: Alignment.center,
               width: HomePage.buttonSize,
               height: HomePage.buttonSize,
-              // conditional operator (?:)
               child: (num == -1) ? Icon(Icons.backspace_outlined) : Text('$num',style: TextStyle(
               fontSize: 20.0),),
               );
